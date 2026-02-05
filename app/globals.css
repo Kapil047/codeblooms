@@ -1,26 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-primary: #475467;
+  --color-gray-500: #667085;
+  --color-neutral-40: #5C5F5D;
+  --color-secondary: #D0D5DD;
+  --color-primary-solid: #0C111D;
+  --color-button-secondary: #344054;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Small text */
+  --text-caption: clamp(10px, 1vw, 12px);
+  --text-body-sm: clamp(12px, 1.1vw, 14px);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Body text */
+  --text-body: clamp(14px, 1.2vw, 16px);
+  --text-body-lg: clamp(16px, 1.4vw, 18px);
+
+  /* Sub headings */
+  --text-subheading: clamp(18px, 1.6vw, 20px);
+
+  /* Headings */
+  --text-heading-sm: clamp(20px, 2vw, 24px);
+  --text-heading-md: clamp(26px, 2.6vw, 32px);
+  --text-heading-lg: clamp(32px, 3vw, 38px);
+
+  /* Hero / Display */
+  --text-heading-xl: clamp(40px, 3.6vw, 48px);
+  --text-display: clamp(48px, 4.2vw, 59px);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }

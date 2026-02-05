@@ -8,8 +8,7 @@ export default function Home() {
     <div>
       <Hero />
       <ImagesShowCase />
-      <WorkedWith />
-      
+      <WorkedWith />    
     </div>
   );
 }
