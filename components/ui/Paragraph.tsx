@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Paragraph = () => {
+interface ParagraphProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Paragraph = ({ children, className }: ParagraphProps) => {
   return (
-    <div>Paragraph</div>
+    <p className={`text-body-lg text-gray-500 ${className}`}>{children}</p>
   )
 }
 
