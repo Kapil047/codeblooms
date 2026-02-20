@@ -24,7 +24,7 @@ const Button = ({ children, onClick, className }: ButtonProps) => {
     }
   };
   return (
-    <button onMouseEnter={handleMouseEnter} onClick={onClick} className={`py-3 pr-3 pl-6 text-xl font-medium leading-[120%] flex justify-center items-center gap-3 ${className}`}>{children}
+    <button onMouseEnter={handleMouseEnter} onClick={onClick} className={`sm:py-3 py-2 sm:pr-3 pr-2 sm:pl-6 pl-4 sm:text-xl text-lg bg-black rounded-full text-white font-medium leading-[120%] flex justify-center items-center gap-3 ${className}`}>{children}
       <div className="size-9 bg-white rounded-4xl p-0.5">
         <div className="border border-black h-full w-full rounded-full flex justify-center items-center relative -rotate-135">
           <Lottie
@@ -33,7 +33,8 @@ const Button = ({ children, onClick, className }: ButtonProps) => {
             loop={false}
             autoplay={false}
             onComplete={() => setIsPlaying(false)}
-          />      </div>
+          />
+        </div>
       </div></button>
   )
 }
