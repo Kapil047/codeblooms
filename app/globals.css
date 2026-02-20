@@ -27,9 +27,9 @@ body {
   /* Headings */
   --text-heading-sm: clamp(20px, 2vw, 24px);
   --text-heading-md: clamp(26px, 2.6vw, 32px);
-  --text-heading-lg: clamp(32px, 3vw, 38px);
+  --text-heading-lg: clamp(28px, 3vw, 38px);
 
   /* Hero / Display */
-  --text-heading-xl: clamp(40px, 3.6vw, 48px);
-  --text-display: clamp(48px, 4.2vw, 59px);
+  --text-heading-xl: clamp(30px, 3.6vw, 48px);
+  --text-main-heading: clamp(32px, 4.2vw, 59px);
 }
