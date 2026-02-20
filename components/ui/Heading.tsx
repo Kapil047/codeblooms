@@ -9,7 +9,7 @@ interface HeadingProps {
 
 const Heading = ({ Tag, children, className, spanText }: HeadingProps) => {
   return (
-    <Tag className={`${Tag === 'h1' ? 'text-main-heading font-bold leading-[140%] text-center' : Tag === 'h2' ? 'text-heading-lg font-semibold leading-[120%] text-center' : Tag === 'h3' ? 'text-heading-md font-semibold leading-[120%] text-center' : ''} ${className}`}> <span className='text-gray-500'>{spanText}</span> {children}</Tag>
+    <Tag className={`${Tag === 'h1' ? 'text-main-heading font-bold leading-[140%] text-center' : Tag === 'h2' ? 'text-heading-lg font-bold leading-[120%] text-center' : Tag === 'h3' ? 'text-heading-md font-semibold leading-[120%] text-center' : ''} ${className}`}> <span className='text-gray-500'>{spanText}</span> {children}</Tag>
   )
 }
 
