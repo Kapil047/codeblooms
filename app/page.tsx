@@ -1,3 +1,4 @@
+import APassion from "@/components/home/APassion";
 import Hero from "@/components/home/Hero";
 import ImagesShowCase from "@/components/home/ImagesShowCase";
 import TurningData from "@/components/home/TurningData";
@@ -11,6 +12,7 @@ export default function Home() {
       <ImagesShowCase />
       <WorkedWith /> 
       <TurningData/>
+      <APassion/>
     </div>
   );
 }

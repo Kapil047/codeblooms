@@ -33,3 +33,7 @@ body {
   --text-heading-xl: clamp(30px, 3.6vw, 48px);
   --text-main-heading: clamp(32px, 4.2vw, 59px);
 }
+
+button {
+  cursor: pointer;
+}
