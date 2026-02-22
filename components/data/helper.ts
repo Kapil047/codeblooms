@@ -36,6 +36,10 @@ export const PORTFOLIO_DATA = [
     }
 ]
 
+export const TOOLBOX_DATA = [
+    'htmlIcon', 'cssIcon', 'jsIcon', 'tsIcon', 'reactjsIcon', 'nextjsIcon', 'vuejsIcon', 'nuxtjsIcon', 'angularIcon', 'figmaIcon', 'webflowIcon', 'shopifyicon', 'framerIcon'
+]
+
 // whatIsData: {
 //     logo: "",
 //     image: "",

@@ -1,4 +1,5 @@
 import Portfolio from "@/components/common/Portfolio";
+import Toolbox from "@/components/common/Toolbox";
 import APassion from "@/components/home/APassion";
 import Hero from "@/components/home/Hero";
 import ImagesShowCase from "@/components/home/ImagesShowCase";
@@ -15,6 +16,7 @@ export default function Home() {
       <TurningData />
       <APassion />
       <Portfolio />
+      <Toolbox />
     </div>
   );
 }
