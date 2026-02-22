@@ -1,3 +1,4 @@
+import Portfolio from "@/components/common/Portfolio";
 import APassion from "@/components/home/APassion";
 import Hero from "@/components/home/Hero";
 import ImagesShowCase from "@/components/home/ImagesShowCase";
@@ -10,9 +11,10 @@ export default function Home() {
     <div>
       <Hero />
       <ImagesShowCase />
-      <WorkedWith /> 
-      <TurningData/>
-      <APassion/>
+      <WorkedWith />
+      <TurningData />
+      <APassion />
+      <Portfolio />
     </div>
   );
 }

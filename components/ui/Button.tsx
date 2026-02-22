@@ -20,12 +20,14 @@ const Button = ({ children, onClick, className }: ButtonProps) => {
     setIsPlaying(true);
 
     if (lottieRef.current) {
-      lottieRef.current.goToAndPlay(0, true);
+      setTimeout(() => {
+        lottieRef.current.goToAndPlay(0, true);
+      }, 200);
     }
   };
   return (
-    <button onMouseEnter={handleMouseEnter} onClick={onClick} className={`sm:py-3 py-2 sm:pr-3 pr-2 sm:pl-6 pl-4 sm:text-xl text-lg bg-black rounded-full text-white font-medium leading-[120%] flex justify-center items-center gap-3 ${className}`}>{children}
-      <div className="size-9 bg-white rounded-4xl p-0.5">
+    <button onMouseEnter={handleMouseEnter} onClick={onClick} className={`sm:py-3 group py-2 sm:pr-3 pr-2 sm:pl-6 pl-4 sm:text-xl text-lg bg-black rounded-full text-white font-medium leading-[120%] flex justify-center items-center gap-3 ${className}`}>{children}
+      <div className={`size-9 bg-white rounded-4xl p-0.5 group-hover:rotate-45 duration-300 ${isPlaying ? "rotate-45" : ""}`}>
         <div className="border border-black h-full w-full rounded-full flex justify-center items-center relative -rotate-135">
           <Lottie
             lottieRef={lottieRef}
