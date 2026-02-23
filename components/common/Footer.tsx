@@ -38,7 +38,7 @@ const Footer = () => {
   const LinkdinAnimation = useHoverLottie();
 
   return (
-    <div className='bg-gray-25 py-[64px] px-5'>
+    <div className='bg-gray-25 lg:py-16 md:py-12 sm:py-10 py-8 px-5'>
       <div className="max-w-[1036px] mx-auto flex flex-col items-center md:gap-8 sm:gap-6 gap-3">
         <p className='text-heading-sm font-bold'>
           Code <span className='text-gray-500'>Blooms</span>

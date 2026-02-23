@@ -3,6 +3,7 @@ import Toolbox from "@/components/common/Toolbox";
 import APassion from "@/components/home/APassion";
 import Hero from "@/components/home/Hero";
 import ImagesShowCase from "@/components/home/ImagesShowCase";
+import Snapshots from "@/components/home/Snapshots";
 import TurningData from "@/components/home/TurningData";
 import WorkedWith from "@/components/home/WorkedWith";
 import Image from "next/image";
@@ -17,6 +18,7 @@ export default function Home() {
       <APassion />
       <Portfolio />
       <Toolbox />
+      <Snapshots />
     </div>
   );
 }

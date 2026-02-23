@@ -22,7 +22,7 @@ const Portfolio = () => {
     }
   };
   return (
-    <div className='py-[64px] px-5'>
+    <div className='lg:py-16 md:py-12 sm:py-10 py-8 px-5'>
       <div className="max-w-[1036px] mx-auto flex flex-col justify-center items-center gap-[64px]">
         <div className="flex justify-center items-center gap-6 flex-col">
           <Heading className='text-heading-xl! font-semibold!' Tag='h2'>Portfolio</Heading>
@@ -54,7 +54,7 @@ const Portfolio = () => {
           }
         </div>
         <Link onMouseEnter={handleMouseEnter} className='border border-[#D0D5DD] rounded-[999px] py-3 px-10 text-body font-semibold text-button-secondary group flex items-center justify-center gap-3 relative duration-300 hover:bg-black hover:text-white w-[146px] hover:pl-3 hover:border-black ' href={"/portfolio"}>View All
-          <div className="size-9 opacity-0 group-hover:opacity-100 duration-300 bg-white absolute right-2 rounded-full p-0.5">
+          <div className="size-9 opacity-0 group-hover:opacity-100 duration-300 bg-white absolute right-2 rounded-full p-0.5 group-hover:rotate-45">
             <div className="border border-black h-full w-full rounded-full flex justify-center items-center relative -rotate-135">
               <div className="scale-[0.8]">
                 <Lottie

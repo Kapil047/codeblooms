@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const TurningData = () => {
   return (
-    <div className='px-5 py-[64px]'>
+    <div className='px-5 lg:py-16 md:py-12 sm:py-10 py-8'>
       <div className="max-w-[1036px] mx-auto flex justify-center items-center lg:gap-[64px] lg:flex-row flex-col">
         <div className="flex flex-col sm:items-start items-center md:gap-[43px] sm:gap-6 gap-4 max-w-[396px]">
           <Heading Tag='h2' className='sm:text-start'>Turning Data into <span className='text-gray-500'>Design</span></Heading>

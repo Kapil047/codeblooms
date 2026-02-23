@@ -15,7 +15,7 @@ const Toolbox = () => {
         <div className="flex flex-wrap md:gap-10 sm:gap-6 sm: gap-4 justify-center">
           {
             TOOLBOX_DATA.map((item, index) => (
-              <div className="size-24 p-[19px] shadow-[0_0_4px_0_rgba(0,0,0,0.1)] flex justify-center items-center" key={index}>
+              <div className="sm:size-24 size-16 sm:p-[19px] p-3 shadow-[0_0_4px_0_rgba(0,0,0,0.1)] flex justify-center items-center" key={index}>
                 <Icons className='w-full h-full' icon={item} />
               </div>
             ))
