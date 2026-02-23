@@ -62,9 +62,13 @@ const Header = () => {
   //   return () => clearTimeout(timer);
   // }, []);
   return (
-    <div className='fixed top-[30px] left-1/2 -translate-x-1/2 bg-white/60 rounded-[90px] py-5 px-11 shadow-[0px_0px_15px_0px_#00000008,0px_2px_30px_0px_#00000014,0px_0px_1px_0px_#0000004D] backdrop-blur-[15px] flex items-center justify-center gap-[46px] z-999 text-sm font-semibold text-primary leading-[20px]'>
-      <div className="w-[70px] flex justify-center relative">
-        <Link onMouseEnter={homeLink.handleEnter} onMouseLeave={homeLink.handleLeave} href="/">Home</Link>
+    <div className='fixed top-[30px] left-1/2 -translate-x-1/2 bg-white/60 rounded-[90px] py-5 sm:px-11 px-6 shadow-[0px_0px_15px_0px_#00000008,0px_2px_30px_0px_#00000014,0px_0px_1px_0px_#0000004D] backdrop-blur-[15px] flex items-center justify-center sm:gap-[46px] gap-5 z-999 text-body font-semibold text-primary leading-[20px]'>
+      <div className="lg:w-[70px] flex justify-center relative">
+        <Link className='text-nowrap' onMouseEnter={homeLink.handleEnter} onMouseLeave={homeLink.handleLeave} href="/">
+          <span className='max-lg:hidden'>Home</span>
+          <span className='text-black max-sm:hidden lg:hidden'>Code <span className='text-gray-500'>Blooms</span></span>
+          <span className='text-black sm:hidden'>Code <span className='text-gray-500'>Bl.</span></span>
+        </Link>
         <div className="absolute left-6 max-w-[36px] -translate-y-[12px] translate-x-[1px] rotate-[29deg] pointer-events-none">
           <Lottie
             lottieRef={homeLink.lottieRef}
@@ -75,8 +79,8 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="w-[70px] flex justify-center relative">
-        <Link onMouseEnter={portfolioLink.handleEnter} onMouseLeave={portfolioLink.handleLeave} href="/portfolio">Portfolio</Link>
+      <div className="lg:w-[70px] flex justify-center relative">
+        <Link className='text-nowrap' onMouseEnter={portfolioLink.handleEnter} onMouseLeave={portfolioLink.handleLeave} href="/portfolio">Portfolio</Link>
         <div className="absolute left-6 max-w-[36px] -translate-y-[16px] -translate-x-[0.25px] rotate-[25deg] pointer-events-none">
           <Lottie
             lottieRef={portfolioLink.lottieRef}
@@ -87,8 +91,8 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="w-[70px] flex justify-center relative">
-        <Link onMouseEnter={aboutMeLink.handleEnter} onMouseLeave={aboutMeLink.handleLeave} href="/about-me">About Me</Link>
+      <div className="lg:w-[70px] flex justify-center relative">
+        <Link className='text-nowrap' onMouseEnter={aboutMeLink.handleEnter} onMouseLeave={aboutMeLink.handleLeave} href="/about-me">About Me</Link>
         <div className="absolute left-6 max-w-[36px] translate-y-[6px] -translate-x-[9.25px] rotate-[212deg] pointer-events-none">
           <Lottie
             lottieRef={aboutMeLink.lottieRef}
@@ -99,8 +103,8 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="w-[70px] flex justify-center relative">
-        <Link onMouseEnter={contactLink.handleEnter} onMouseLeave={contactLink.handleLeave} href="/contact">Contact</Link>
+      <div className="lg:w-[70px] flex justify-center relative">
+        <Link className='text-nowrap' onMouseEnter={contactLink.handleEnter} onMouseLeave={contactLink.handleLeave} href="/contact">Contact</Link>
         <div className="absolute left-6 max-w-[36px] translate-y-[6px] -translate-x-[13.25px] rotate-[212deg] pointer-events-none">
           <Lottie
             lottieRef={contactLink.lottieRef}

@@ -14,8 +14,8 @@ const Hero = () => {
         src={'/assets/png/pattern-image.png'}
         alt='bg-image'
       />
-      <div className="max-w-[1036px] mx-auto w-full relative z-10">
-        <div className="flex justify-between w-full items-center mb-[114px]">
+      <div className="max-w-[1036px] mx-auto w-full relative z-10 max-lg:pt-[114px]">
+        <div className="flex justify-between w-full items-center mb-[114px] max-lg:hidden">
           <p className='text-heading-sm font-bold'>
             Code <span className='text-gray-500'>Blooms</span>
           </p>
