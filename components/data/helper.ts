@@ -81,6 +81,21 @@ export const SNAPSHOTS_DATA = [
     "/assets/png/snapshot-image-1.png", "/assets/png/snapshot-image-2.png", "/assets/png/snapshot-image-3.png"
 ]
 
+export const SKILL_SET_DATA = [
+    {
+        title: "Product",
+        skills: [
+            "Design System", "Lean UX", "Agile Methodology", "Data Analysis", "UI Kits", "User Centered Design", "Data-Driven Design"
+        ]
+    },
+    {
+        title: "UX Design",
+        skills: [
+            "User Interviews", "Surveys", "Personas", "Competitor Audits", "User Journey Maps", "Empathy Maps", "User Stories", "Usability Testing", "A/B Testing", "Mind Mapping", "User Flows", " Information Architecture"
+        ]
+    }
+]
+
 // whatIsData: {
 //     logo: "",
 //     image: "",

@@ -11,10 +11,14 @@ const page = () => {
     return (
         <div>
             <Hero />
-            <MyJourney />
-            <WorkHistory />
-            <EducationCourses />
-            <SkillSet />
+            <div className="px-5">
+                <div className="flex flex-col gap-[138px] py-25 max-w-[960px] mx-auto">
+                    <MyJourney />
+                    <WorkHistory />
+                    <EducationCourses />
+                    <SkillSet />
+                </div>
+            </div>
             <Toolbox />
             <Portfolio />
         </div>
