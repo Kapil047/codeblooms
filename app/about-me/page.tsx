@@ -12,7 +12,7 @@ const page = () => {
         <div>
             <Hero />
             <div className="px-5">
-                <div className="flex flex-col gap-[138px] py-25 max-w-[960px] mx-auto">
+                <div className="flex flex-col gap-10 py-12 sm:gap-15 sm:py-17 md:gap-25 md:py-25 lg:gap-[138px] lg:py-25 max-w-[960px] mx-auto">
                     <MyJourney />
                     <WorkHistory />
                     <EducationCourses />

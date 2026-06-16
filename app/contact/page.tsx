@@ -9,6 +9,6 @@ const page = () => {
             <ContectForm />
         </div>
     )
-}
+} 
 
 export default page
