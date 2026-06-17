@@ -5,7 +5,6 @@ import SkillSet from '@/components/about-me/SkillSet'
 import WorkHistory from '@/components/about-me/WorkHistory'
 import Portfolio from '@/components/common/Portfolio'
 import Toolbox from '@/components/common/Toolbox'
-import React from 'react'
 
 const page = () => {
     return (
@@ -15,7 +14,7 @@ const page = () => {
                 <div className="flex flex-col gap-10 py-12 sm:gap-15 sm:py-17 md:gap-25 md:py-25 lg:gap-[138px] lg:py-25 max-w-[960px] mx-auto">
                     <MyJourney />
                     <WorkHistory />
-                    <EducationCourses />
+                    {/* <EducationCourses /> */}
                     <SkillSet />
                 </div>
             </div>
